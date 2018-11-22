@@ -32,9 +32,9 @@ namespace UserInterface.Forms
             
             if (age >= 18)
             {
-                this.Hide();
                 var mainForm = new MainForm();
                 mainForm.Show();
+                this.Close();
             }
             else
             {
