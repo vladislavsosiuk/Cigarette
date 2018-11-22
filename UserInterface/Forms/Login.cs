@@ -22,7 +22,9 @@ namespace UserInterface.Forms
             int age = Convert.ToInt32(textBox1.Text);
             if (age >= 18)
             {
-
+                this.Hide();
+                var mainForm = new MainForm();
+                mainForm.Show();
             }
             else
             {
