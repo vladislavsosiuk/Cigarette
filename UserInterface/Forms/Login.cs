@@ -42,5 +42,10 @@ namespace UserInterface.Forms
                 MessageBox.Show("Еще юн щегол!");
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Login form has been shown");
+        }
     }
 }
