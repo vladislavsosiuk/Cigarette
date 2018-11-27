@@ -23,7 +23,7 @@ namespace UserInterface.Forms
 
         private void Details_Load(object sender, EventArgs e)
         {
-            this.dataGridView1.DataSource = post;
+            this.dataGridView1.DataSource = new List<Post> { post };
         }
     }
 }
