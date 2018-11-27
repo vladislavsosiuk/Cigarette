@@ -30,5 +30,11 @@ namespace UserInterface.Forms
             listBox1.DisplayMember = nameof(Post.Title);
         }
 
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            Post post = (Post)listBox1.SelectedItem;
+            DetailsForm detailsForm = new DetailsForm(post);
+            detailsForm.Show();
+        }
     }
 }
